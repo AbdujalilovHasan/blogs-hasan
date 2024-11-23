@@ -19,7 +19,7 @@ import UsersPage from './pages/protected/admin/usersPage/UsersPage';
 import UserLayout from './components/layout/userLayout/UserLayout';
 import AdminLayout from './components/layout/adminLayout/AdminLayout';
 
-import useAuth from './components/hooks/useAuth';
+import useAuth from './hooks/useAuth';
 ``
 const App = () => {
     const { user } = useAuth();

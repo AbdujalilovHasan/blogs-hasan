@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import logo from "../../assets/images/Logo.svg";
-import useAuth from '../hooks/useAuth';
+import useAuth from '../../hooks/useAuth';
 import './Navbar.css'
 
 function Navbar() {
@@ -35,9 +35,9 @@ function Navbar() {
                   </li>
                   <li className="nav-item">
                     {user && user.role === 'user' ? (
-                      <Link to="/user-account" className="nav-link">Account</Link>
+                      <Link to="/user-account" className="nav-link py-2 px-6 bg-[#fff] text-[#000] rounded-lg">Account</Link>
                     ) : (
-                      <Link to="/login" className="nav-link">Login</Link>
+                      <Link to="/login" className="nav-link py-2 px-6 bg-[#fff] text-[#000] rounded-lg">Login</Link>
                     )}
                   </li>
                 </ul>

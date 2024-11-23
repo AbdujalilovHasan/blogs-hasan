@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { UserOutlined, LockOutlined, LoadingOutlined } from '@ant-design/icons';
-import useAuth from '../../components/hooks/useAuth';
+import useAuth from '../../hooks/useAuth';
 
 function LoginPage() {
   const { login, loading } = useAuth();

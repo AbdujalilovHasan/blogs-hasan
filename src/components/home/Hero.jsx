@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useData from '../../components/hooks/useData';
+import useData from '../../hooks/useData';
 import demoImage from '../../assets/images/hero.png';
 import { UPLOAD_IMAGE_URL } from '../../utils/constants';
 

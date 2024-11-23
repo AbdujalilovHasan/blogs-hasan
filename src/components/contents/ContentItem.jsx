@@ -1,21 +1,23 @@
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { UPLOAD_IMAGE_URL } from '../../utils/constants';
+import { lazy } from 'react';
 
 const ComponentItem = ({ category, description, title, photo, _id }) => {
   const imageUrl = `${UPLOAD_IMAGE_URL}${photo._id}.${photo.name.split('.')[1]}`;
 
   return (
-    <div className="post-item grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+    <div className="post-item flex grid  grid-cols-1 !gap-[35px] mt-10 md:grid-cols-2 gap-6 mb-16">
       <div className="post-image">
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-auto object-cover rounded-lg shadow-md"
+          loading={lazy}
+          className="w-full custom:w-[447px] h-[340px] object-cover rounded-lg shadow-md"
         />
       </div>
 
-      <div className="post-content flex flex-col justify-between">
+      <div className="post-content justify-between">
         <span className="text-[#592EA9] font-semibold text-sm tracking-wider uppercase mb-4">
           {category.name}
         </span>

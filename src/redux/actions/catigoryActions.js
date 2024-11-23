@@ -9,7 +9,7 @@ const getCategory = (page, limit, search) => async (dispatch) => {
   dispatch({ type: GET_CATEGORIES_REQUEST });
   try {
     const response = await apiClient.get(
-      `/category?page=${page}&limit=${limit}&search=${search}`
+      `/category?page=${page}&limit=${limit}&search=${search}1`
     );
     dispatch({
       type: GET_CATEGORIES_SUCCESS,

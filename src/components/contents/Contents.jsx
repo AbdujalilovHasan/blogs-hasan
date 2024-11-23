@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Pagination } from 'antd';
-import useFetchData from '../hooks/useData';
+import useData from '../../hooks/useData';
 import ComponentItem from './ContentItem';
 import { LIMIT } from '../../utils/constants';
 
 const Contents = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const { data, loading, error } = useFetchData('posts', {
+  const { data, loading, error } = useData('post', {
     page: currentPage,
     limit: LIMIT,
   });
@@ -19,13 +19,13 @@ const Contents = () => {
   const totalItems = data?.pagination?.total || 0;
 
   return (
-    <div className="components-container max-w-5xl mx-auto px-4 py-6">
+    <div className="max-w-5xl">
       {loading && <p>Loading...</p>}
       {error && <p className="text-red-500">Error: {error.message}</p>}
 
-      <div className="component-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {postsData.map((post) => (
-          <ComponentItem key={post.id} {...post} />
+      <div className="component-list md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {postsData.map((content) => (
+          <ComponentItem key={content.id} {...content} />
         ))}
       </div>
 

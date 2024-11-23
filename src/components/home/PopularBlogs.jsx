@@ -1,6 +1,6 @@
 import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import useData from '../../components/hooks/useData';
+import useData from '../../hooks/useData';
 import PopularItem from './PopularItem';
 import 'swiper/css';
 import 'swiper/css/autoplay';

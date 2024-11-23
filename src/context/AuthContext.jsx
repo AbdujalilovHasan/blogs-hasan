@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { message } from 'antd';
 import Cookies from 'js-cookie';
 import PropTypes from 'prop-types';
-import { AuthContext } from '../components/hooks/useAuth';
+import { AuthContext } from '../hooks/useAuth';
 import request from '../services/request';
 import { TOKEN_KEY, USER_KEY } from '../utils/constants';
 
