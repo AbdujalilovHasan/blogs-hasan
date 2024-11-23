@@ -1,0 +1,22 @@
+.row {
+    padding: 16px;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+ul li a {
+    padding: 8px 0;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+nav {
+    background: #232536;
+    z-index: 999;
+}

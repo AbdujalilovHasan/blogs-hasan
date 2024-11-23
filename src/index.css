@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ant-layout-sider {
+  height: 100vh;
+}
+
+.ant-layout-footer {
+  padding: 0;
+}
+
+.ant-menu {
+  display: block;
+}

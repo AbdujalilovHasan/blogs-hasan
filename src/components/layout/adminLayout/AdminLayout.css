@@ -1,0 +1,4 @@
+.ant-menu-root ul {
+    display: flex;
+    flex-direction: column;
+}
